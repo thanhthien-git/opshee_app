@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #ff8300;
+  --secondary-color: #fdbb2d;
+  --bg-background: #F5F5F5;
+  --text-color: #000000ac;
+  --bg-gradient: linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+}
+
+html,
+body {
+  margin: 0 !important;
+}

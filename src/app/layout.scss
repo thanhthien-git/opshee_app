@@ -1,0 +1,41 @@
+@import url("./global.scss");
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  background: var(--bg-gradient);
+  color: white;
+  padding: 4px 16px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: inherit;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer {
+  text-align: center;
+  background-color: #001529;
+  color: white;
+  padding: 12px 24px;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 10px;
+  }
+}
