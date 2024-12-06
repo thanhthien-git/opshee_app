@@ -1,4 +1,4 @@
-@import url("../../global.scss");
+@import "../../styles/global.scss";
 
 .opshee-header-search {
   display: flex;
@@ -32,7 +32,6 @@
 
 .opshee-search-input {
   width: 100%;
-  border-radius: 20px;
   padding-left: 20px;
   font-size: 16px;
 
@@ -41,7 +40,7 @@
     color: white;
     width: 80px;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 8px;
     justify-content: center;
     background: var(--primary-color);
   }

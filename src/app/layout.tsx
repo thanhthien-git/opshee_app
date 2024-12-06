@@ -1,15 +1,14 @@
-import { Layout as AntLayout, Image } from "antd";
+import { Layout as AntLayout } from "antd";
 import { Content, Footer, Header } from "antd/es/layout/layout";
-import "./global.scss";
-import "./layout.scss";
+import "../app/styles/global.scss";
+import "../app/styles/layout.scss";
 import React from "react";
 import HeaderSearchBar from "./components/opshee-header-search";
 interface LayoutProps {
   children: React.ReactNode;
-  title: string;
 }
 
-export default function Layout({ title, children }: Readonly<LayoutProps>) {
+export default function Layout({ children }: Readonly<LayoutProps>) {
   return (
     <html>
       <head>
