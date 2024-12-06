@@ -1,0 +1,11 @@
+.opshee-banner-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40%;
+
+  &-image {
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}

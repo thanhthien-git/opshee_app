@@ -4,6 +4,7 @@ import "../app/styles/global.scss";
 import "../app/styles/layout.scss";
 import React from "react";
 import HeaderSearchBar from "./components/opshee-header-search";
+import OpsheeFooter from "./components/opshee-footer";
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -20,7 +21,9 @@ export default function Layout({ children }: Readonly<LayoutProps>) {
             <HeaderSearchBar />
           </Header>
           <Content className="main-content">{children}</Content>
-          <Footer className="main-footer">{new Date().toDateString()}</Footer>
+          <Footer className="main-footer">
+            <OpsheeFooter />
+          </Footer>
         </AntLayout>
       </body>
     </html>

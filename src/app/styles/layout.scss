@@ -20,22 +20,25 @@
 }
 
 .main-content {
-  flex: 1;
   padding: 24px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-grow: 1;
 }
 
 .main-footer {
   text-align: center;
-  background-color: #001529;
-  color: white;
-  padding: 12px 24px;
+  color: black;
+  border-top: 2px solid var(--primary-color);
+  padding: 24px;
 }
 
 @media (max-width: 768px) {
   .main-header {
+    padding: 10px;
+  }
+  .main-content {
     padding: 10px;
   }
 }
