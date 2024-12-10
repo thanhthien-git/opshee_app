@@ -1,12 +1,8 @@
-import {
-  BellOutlined,
-  SearchOutlined,
-  ShoppingCartOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
-import { Avatar, Badge, Button, Divider, Image, Input } from "antd";
+import { Badge, Button, Divider, Image, Input } from "antd";
 import logo from "../../../../public/logo.png";
 import "./styles.scss";
+import Link from "next/link";
+import { SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 
 export default function HeaderSearchBar() {
   return (
@@ -22,7 +18,7 @@ export default function HeaderSearchBar() {
           </Button>
         </div>
         <div className="quickbar-user">
-          <div className="quickbar-user-notification">
+          {/* <div className="quickbar-user-notification">
             <Button
               type="link"
               icon={
@@ -38,6 +34,15 @@ export default function HeaderSearchBar() {
               className="quickbar-user-info-avatar"
             />
             Opshee ADMIN
+          </div> */}
+          <div>
+            <Link className="quickbar-login" href={"/login"}>
+              Đăng nhập
+            </Link>
+            <Divider type="vertical" style={{ backgroundColor: "white" }} />
+            <Link className="quickbar-login" href={"/register"}>
+              Đăng ký
+            </Link>
           </div>
         </div>
       </div>

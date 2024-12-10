@@ -1,6 +1,6 @@
 import { Col, Image, Row } from "antd";
-import "./styles.scss";
 import { StyledCarousel } from "../../carousel";
+import "./styles.scss";
 
 export default function OpsheeBanner() {
   return (

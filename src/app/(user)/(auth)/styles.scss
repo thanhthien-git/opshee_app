@@ -1,0 +1,19 @@
+.opshee-buyer {
+  background: #fff !important;
+  height: 80px;
+
+  &-logo {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      margin: 0px;
+    }
+
+    gap: 10px;
+  }
+}

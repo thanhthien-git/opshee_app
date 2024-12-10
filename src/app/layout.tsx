@@ -1,30 +1,25 @@
-import { Layout as AntLayout } from "antd";
-import { Content, Footer, Header } from "antd/es/layout/layout";
-import "../app/styles/global.scss";
-import "../app/styles/layout.scss";
-import React from "react";
-import HeaderSearchBar from "./components/opshee-header-search";
+import { Footer } from "antd/es/layout/layout";
 import OpsheeFooter from "./components/opshee-footer";
+import "./styles/global.scss";
+import "./styles/layout.scss";
+import AntdRegistry from "@ant-design/nextjs-registry/es/AntdRegistry";
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function Layout({ children }: Readonly<LayoutProps>) {
+export default function RootLayout({ children }: Readonly<LayoutProps>) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <title>Opshee</title>
       </head>
       <body>
-        <AntLayout className="main">
-          <Header className="main-header">
-            <HeaderSearchBar />
-          </Header>
-          <Content className="main-content">{children}</Content>
+        <AntdRegistry>
+          {children}
           <Footer className="main-footer">
             <OpsheeFooter />
           </Footer>
-        </AntLayout>
+        </AntdRegistry>
       </body>
     </html>
   );

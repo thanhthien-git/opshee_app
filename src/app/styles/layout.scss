@@ -1,4 +1,4 @@
-@import "./global.scss";
+@import "global.scss";
 
 .main {
   min-height: 100vh;
@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.main-header {
+.main .main-header {
   background: var(--bg-gradient);
   color: white;
   padding: 4px 16px 16px 16px;
@@ -19,7 +19,7 @@
   height: inherit;
 }
 
-.main-content {
+.main .main-content {
   padding: 24px;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
 .main-footer {
   text-align: center;
   color: black;
-  border-top: 2px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color) !important;
   padding: 24px;
 }
 
