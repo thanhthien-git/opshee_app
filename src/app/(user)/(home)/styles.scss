@@ -1,0 +1,13 @@
+.opshee-main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (width <= 768px) {
+  .opshee-main {
+    width: 100%;
+  }
+}

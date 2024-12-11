@@ -1,0 +1,28 @@
+.opshee-flashsale-card {
+  padding: 20px !important;
+  border: none !important;
+
+  span {
+    position: absolute;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffe97a;
+    color: #ec3814;
+    border-radius: 5px;
+    font-size: 16;
+  }
+  img {
+    border-radius: 8px;
+  }
+}
+
+.ant-card-meta-detail {
+  margin-top: 10px !important;
+}
+.opshee-flashsale-price {
+  text-align: center;
+}
+
+.opshee-flashsale-bar {
+  margin-top: 10px !important;
+}

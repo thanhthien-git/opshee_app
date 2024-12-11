@@ -35,10 +35,10 @@
 }
 
 @media (max-width: 768px) {
-  .main-header {
-    padding: 10px;
-  }
   .main-content {
-    padding: 10px;
+    height: 100vh;
+  }
+  .main-footer {
+    display: none;
   }
 }

@@ -1,11 +1,16 @@
 import { Col, Image, Row } from "antd";
-import { StyledCarousel } from "../../carousel";
 import "./styles.scss";
+import { StyledCarousel } from "../../common/carousel";
 
 export default function OpsheeBanner() {
   return (
     <section className="opshee-banner-wrapper">
-      <Row style={{ height: "100%" }} justify={"space-between"} gutter={10}>
+      <Row
+        style={{ height: "100%" }}
+        justify={"space-between"}
+        className="opshee-carousel-banner"
+        gutter={10}
+      >
         <Col span={18} style={{ height: "100%" }}>
           <StyledCarousel
             autoplaySpeed={1500}
@@ -50,23 +55,25 @@ export default function OpsheeBanner() {
           }}
         >
           <Row style={{ height: "50%" }}>
-            <Image
-              src="https://placehold.co/800x300"
-              preview={false}
-              className="opshee-banner-wrapper-image"
-              height={"100%"}
-              width={"100%"}
-            />
+            <div className="opshee-banner-wrapper-image">
+              <Image
+                src="https://placehold.co/800x300"
+                preview={false}
+                height={"100%"}
+                width={"100%"}
+              />
+            </div>
           </Row>
 
           <Row style={{ height: "50%" }}>
-            <Image
-              src="https://placehold.co/800x300"
-              preview={false}
-              className="opshee-banner-wrapper-image"
-              height={"100%"}
-              width={"100%"}
-            />
+            <div className="opshee-banner-wrapper-image">
+              <Image
+                src="https://placehold.co/800x300"
+                preview={false}
+                height={"100%"}
+                width={"100%"}
+              />
+            </div>
           </Row>
         </Col>
       </Row>
