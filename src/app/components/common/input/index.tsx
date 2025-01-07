@@ -6,7 +6,8 @@ import {
   FieldError,
   RegisterOptions,
 } from "react-hook-form";
-import './styles.scss'
+import "./styles.scss";
+import Password from "antd/es/input/Password";
 
 interface IProps extends InputProps {
   label?: string;
@@ -27,6 +28,7 @@ export default function InputComponent({
   control,
   className,
   error,
+  type,
   ...props
 }: Readonly<IProps>) {
   return (
@@ -41,13 +43,23 @@ export default function InputComponent({
           help={fieldState.error?.message}
           validateStatus={fieldState.invalid ? "error" : "success"}
         >
-          <Input
-            {...field}
-            allowClear
-            placeholder={placeholder}
-            className={className}
-            {...props}
-          />
+          {type === "password" ? (
+            <Password
+              {...field}
+              allowClear
+              placeholder={placeholder}
+              className={className}
+              {...props}
+            />
+          ) : (
+            <Input
+              {...field}
+              allowClear
+              placeholder={placeholder}
+              className={className}
+              {...props}
+            />
+          )}
         </FormItem>
       )}
     />

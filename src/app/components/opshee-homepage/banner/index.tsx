@@ -15,6 +15,7 @@ export default function OpsheeBanner() {
           <StyledCarousel
             autoplaySpeed={1500}
             pauseOnHover
+            pauseOnFocus
             arrows
             autoplay
             draggable

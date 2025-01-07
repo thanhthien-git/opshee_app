@@ -1,10 +1,31 @@
+"use client";
 import { Badge, Button, Divider, Image, Input } from "antd";
 import logo from "../../../../public/logo.png";
 import "./styles.scss";
-import Link from "next/link";
-import { SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import {
+  LoginOutlined,
+  SearchOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
+import { useCallback, useState } from "react";
+import ModalAuth from "../modal-auth";
+import useScreen from "@/hooks/useScreen";
 
 export default function HeaderSearchBar() {
+  const screen = useScreen();
+  const mobileSize = 768;
+  const isMobile = typeof window !== "undefined" && screen <= mobileSize;
+
+  const [open, setOpen] = useState<boolean>(false);
+
+  const handleOpenModal = useCallback(() => {
+    setOpen(true);
+  }, []);
+
+  const handleCloseModal = useCallback(() => {
+    setOpen(false);
+  }, []);
+
   return (
     <div className="opshee-header">
       <div className="opshee-header-quickbar">
@@ -35,15 +56,6 @@ export default function HeaderSearchBar() {
             />
             Opshee ADMIN
           </div> */}
-          <div>
-            <Link className="quickbar-login" href={"/login"}>
-              Đăng nhập
-            </Link>
-            <Divider type="vertical" style={{ backgroundColor: "white" }} />
-            <Link className="quickbar-login" href={"/register"}>
-              Đăng ký
-            </Link>
-          </div>
         </div>
       </div>
       <div className="opshee-header-search">
@@ -70,7 +82,13 @@ export default function HeaderSearchBar() {
             }
           ></Button>
         </div>
+        <div className="opshee-header-search-login">
+          <Button onClick={handleOpenModal}>
+            {isMobile ? <LoginOutlined /> : "Đăng nhập"}
+          </Button>
+        </div>
       </div>
+      <ModalAuth open={open} onCancel={handleCloseModal} setClose={handleCloseModal}/>
     </div>
   );
 }

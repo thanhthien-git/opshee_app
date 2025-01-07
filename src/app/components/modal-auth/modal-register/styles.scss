@@ -1,0 +1,35 @@
+.input-styled {
+  width: 100% !important  ;
+  min-height: 40px;
+  padding: 12px !important;
+}
+.styled-icon {
+  color: var(--primary-color) !important;
+  margin-right: 12px;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-color) !important;
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+  background: var(--primary-color) !important;
+}
+
+.ant-tabs-tab:hover {
+  color: var(--primary-color) !important;
+}
+.form-register {
+  height: 44vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.steps-content {
+  margin-top: 20px;
+}
+
+.steps-footer {
+  position: relative;
+  bottom: 0px;
+}

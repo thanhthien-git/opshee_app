@@ -1,0 +1,36 @@
+.opshee-product-card {
+  border-radius: 0px 0px 4px 4px !important;
+  border: 0px !important;
+
+  .ant-card-cover {
+    margin-inline: 0px !important;
+  }
+
+  &-image {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  &-name {
+    margin-bottom: 8px;
+
+    h5 {
+      margin: 0 !important;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+  }
+}
+
+.opshee-product-card-meta {
+  margin: 0 !important;
+}
+
+.opshee-product-card-footer {
+  padding: 10px;
+  display: flex;
+
+  &-price {
+    font-size: 20px !important;
+    color: #ff8300 !important;
+  }
+}

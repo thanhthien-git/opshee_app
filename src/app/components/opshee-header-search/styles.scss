@@ -14,7 +14,14 @@
   }
 
   &-cart {
-    margin-left: 32px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &-login button:hover{
+    border-color: transparent !important;
+    color: black !important;
   }
 }
 

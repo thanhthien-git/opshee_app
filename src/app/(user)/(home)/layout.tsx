@@ -1,7 +1,7 @@
 import { Layout as AntLayout } from "antd";
 import { Content, Header } from "antd/es/layout/layout";
-import HeaderSearchBar from "../../components/opshee-header-search";
 import "@/app/styles/layout.scss";
+import HeaderSearchBar from "@/app/components/opshee-header-search";
 
 interface LayoutProps {
   children: React.ReactNode;

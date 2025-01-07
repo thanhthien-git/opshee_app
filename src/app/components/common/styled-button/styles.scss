@@ -1,0 +1,22 @@
+.button-styled {
+  width: 100%;
+  background: var(--primary-color);
+  color: #fff;
+  min-height: 40px;
+
+  &-white {
+    background-color: #fff;
+    min-height: 40px;
+    width: 100%;
+  }
+
+  &-white:hover {
+    background: #fff !important;
+    color: black !important;
+  }
+}
+.button-styled:hover {
+  background: var(--secondary-color) !important;
+  color: #fff !important;
+  border: none !important;
+}

@@ -4,10 +4,32 @@
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
+  font-family: "Alata", sans-serif;
+}
+
+.recommend-title {
+  margin: 0px !important;
+}
+
+.recommend-wrapper {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border-bottom: 4px solid #ff8300;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media (width <= 768px) {
   .opshee-main {
     width: 100%;
   }
+}
+
+@font-face {
+  font-family: "Alata";
+  src: url("/public/font/Alata-Regular.ttf") format("truetype");
 }

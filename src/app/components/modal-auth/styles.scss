@@ -1,0 +1,12 @@
+.content {
+  padding: 16px;
+}
+.styled-modal {
+  height: 90vh;
+}
+
+.ant-modal-content {
+  height: 80vh;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}

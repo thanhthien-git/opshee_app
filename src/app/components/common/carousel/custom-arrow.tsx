@@ -18,6 +18,10 @@ const CustomArrow = styled.div`
     background-color: #ff8300;
     color: white;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const LeftArrow = (props: any) => (
